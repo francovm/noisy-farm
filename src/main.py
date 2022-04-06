@@ -1,5 +1,6 @@
 import sys
 import os
+from unicodedata import category
 
 from fastapi import FastAPI
 from fastapi import File
@@ -64,7 +65,7 @@ async def get_sound_prediction(file: UploadFile = File(...)):
     logger.info('Processing request.')
     results =  app.state.model.predict(file.file)
     logger.info('Transaction complete.')
-    return {"Animal": results}
+    return PredictResponse(category= results)
 
 @app.get('/health')
 def test():

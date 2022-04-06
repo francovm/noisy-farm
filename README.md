@@ -3,7 +3,7 @@ noisy-farm
 
 A farm animal sound classifier
 
-This toy project holds the backend logic and ML model to classify farm animals sound using a pre-trained TensorFlow model (YAMNet) as audio feature extractor and transfer leraning. Model performace has not been optimized. 
+This project holds the backend logic and the ML model to classify farm animals sound using a pre-trained TensorFlow model (YAMNet) as audio feature extractor and transfer leraning. 
 
 
 
@@ -40,13 +40,13 @@ Project Organization
     │   ├── features.py   <- Contain code for feature creation for the original YAMNet model
     │   ├── params.py     <- Contain parametes to run YAMNet model
     │
-    ├── Dockerfile.lambda <- Dockerfile to create a prod container to deploy in AWS Lambda functionS
+    ├── Dockerfile.lambda <- Dockerfile to create a prod container to deploy in AWS Lambda 
     │
     └── Dockerfile            <- Dockerfile to create a dev container
 
 
 --------
-Project inspired by
+Project inspired by:
 
 <p align="center">
   <img src="https://pictures.abebooks.com/isbn/9781852920494-uk.jpg"  width="199" height="200" title="hover text">
